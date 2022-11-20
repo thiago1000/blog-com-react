@@ -8,12 +8,12 @@ const Navbar = () => {
   const { logout } = useAuthentication();
   return (
     <nav className={styles.navbar}>
-      <NavLink to="/" className={styles.brand}>
+      <NavLink to="/blog-com-react/" className={styles.brand}>
         Mini <span>Blog</span>
       </NavLink>
       <ul className={styles.links_list}>
         <li>
-          <NavLink to="/" end className={({ isActive }) => (isActive ? styles.active : "")}>Home</NavLink>
+          <NavLink to="/blog-com-react/" end className={({ isActive }) => (isActive ? styles.active : "")}>Home</NavLink>
         </li>
         {!user &&(
           <>
